@@ -1,0 +1,9 @@
+#cover {
+    border: 2px solid white;
+    padding: 100px;
+    background: url(image/cover.jpg.jpeg);
+    background-repeat: no-repeat;
+    background-size:100% ;
+    align-items: mx-auto;
+    color:white;
+  }

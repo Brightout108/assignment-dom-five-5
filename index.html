@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind/daisyui -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment-5</title>
+</head>
+<body>
+    <header class="mx-10">
+    
+            <div id="cover" class="footer footer-center p-10 bg-base-200 text-base-content rounded">
+                <h1 class="text-5xl  font-extrabold italic ">SELECT Five Cricketers of the Year</h1>
+                <p class="font-extrabold text-5xl">2022</p>
+              </div>
+      
+
+
+              
+    </header>
+    <main>
+        <section class="m-10">
+            <div class="grid grid-cols-4 gap-4  ">
+                
+                    <!-- mash 1-->
+                    <div class="card w-100 bg-base-100 shadow-xl border-x  border-purple-600 ">
+                        <figure class="px-10 pt-10">
+                          <img src="image/mash.webp" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          
+                          <h2 class="card-title font-extrabold italic">
+                            Mashrafe Mortaza</h2>
+                            <!-- <p>: $ <span>107</span></p> -->
+                            <h6 class="text-stone-400">Bangladesh</h6>
+
+                          <p class="text-slate-400 text-sm">Popularly known as the 'Narail Express', Mortaza's career has been beset by injuries. The first real quick bowler to come out of Bangladesh, he was earmarked for great things since the time </p>
+                          <div class="card-actions">
+                            <button id="idOfButton"   onclick="addtoPlayer(this)"  class="btn btn-primary">Select</button>
+                          </div>
+                        </div>
+                      </div>
+
+
+                     
+                    
+
+                        <!-- tamim 2 -->
+                    <div class="card w-100 bg-base-100 shadow-xl border-x  border-purple-600">
+                        <figure class="px-10 pt-10">
+                          <img src="image/tamim.jpg" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title font-extrabold italic">
+                            Tamim Iqbal</h2>
+                            <!-- <p>price: $ <span>107</span></p> -->
+                            <h6 class="text-stone-400">Bangladesh</h6>
+
+                          <p class="text-slate-400 text-sm">When the world talks about the sub-continental openers, they talk about the aggression factor. Virender Sehwag, Sanath Jayasuriya and Sachin Tendulkar have ruthlessly destroyed the bowling </p>
+                          <div class="card-actions">
+                            <button onclick="addtoPlayer(this)" class="btn btn-primary">Select</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- sakib  3-->
+                    <div class="card w-100 bg-base-100 shadow-xl border-x  border-purple-600">
+                        <figure class="px-10 pt-10">
+                          <img src="image/shakib-al-hasan-fb.webp" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title font-extrabold italic">
+                           
+                                    Shakib Al Hasan</h2>
+                                    <!-- <p>price: $ <span>107</span></p> -->
+                            <h6 class="text-stone-400">Bangladesh</h6>
+
+                          <p class="text-slate-400 text-sm">Shakib Al Hasan is without a doubt the biggest name to have emerged from Bangladesh cricket circles. Being a genuine all-rounder, Shakib is a vital cog in Bangladesh's line-up. </p>
+                          <div class="card-actions">
+                         <button onclick="addtoPlayer(this)" class="btn btn-primary">Select</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- add To cart  4 -->
+
+                      
+                        <div class="w-100 h-100  divide-x divide-x-slate-400 border-2xl  bg-red-100">
+                            <h1 class="text-5xl text-center text-fuchsia-900 underline decoration-slate-800 decoration-solid ">Select-<span id="totalPlayer">0</span></h1>
+                            <div class="overflow-x-auto m-3 p-3">
+                                <table class="table w-full  place-content-center h-48">
+                                  <!-- head -->
+                                  <thead >
+                                    <tr>
+                                      <th>sn:</th>
+                                      <th>Name</th>
+                                      <!-- <th>price</th> -->
+                                     
+                                    </tr>
+                                  </thead>
+                                  <tbody id="cartplayers">
+                                    <!-- row 1 -->
+                                   
+                                  
+                                   
+                                  </tbody>
+                                </table>
+                              </div>
+                        </div>
+                    
+                      <!-- add To cart -->
+
+                      <!-- virat-5 -->
+
+                    <div class="card w-100 bg-base-100 shadow-xl border-x  border-purple-600">
+                        <figure class="px-10 pt-10">
+                          <img src="image/virat.jpg" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title font-extrabold italic">
+                            Virat Kohli</h2>
+                            <!-- <p>price: $ <span>107</span></p> -->
+                            <h6 class="text-stone-400">India</h6>
+
+                          <p class="text-slate-400 text-sm">A spunky, chubby teenager with gelled hair shot to fame after leading India to glory in the Under-19 World Cup at Kuala Lumpur in early 2008. In an Indian team filled with saint-like icons </p>
+                          <div class="card-actions">
+                            <button onclick="addtoPlayer(this)" class="btn btn-primary">Select</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- babor-5 -->
+                    <div class="card w-100 bg-base-100 shadow-xl border-x  border-purple-600">
+                        <figure class="px-10 pt-10">
+                          <img src="image/babor.jpg" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title font-extrabold italic">
+                        
+                                    Babar Azam</h2>
+                                    <!-- <p>price: $ <span>107</span></p> -->
+                            <h6 class="text-stone-400">Pakistan</h6>
+
+                          <p class="text-slate-400 text-sm">When Babar Azam notched up his 5th ODI ton against West Indies in his 25th innings in early 2017, he became the second quickest after Quinton De Kock to score five ODI tons </p>
+                          <div class="card-actions">
+                            <button onclick="addtoPlayer(this)" class="btn btn-primary">Select</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- nabi-6 -->
+                    <div class="card w-100 bg-base-100 shadow-xl border-x  border-purple-600">
+                        <figure class="px-10 pt-10">
+                          <img src="image/nabi.jpg" alt="Shoes" class="rounded-xl" />
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title font-extrabold italic">
+                            Mohammad Nabi
+                           </h2>
+                           <!-- <p>price: $ <span>107</span></p> -->
+                            <h6 class="text-stone-400"> Afghanistan</h6>
+
+                          <p class="text-slate-400 text-sm">Sylhet Royals, Quetta Gladiators, Sunrises Hyderabad, St.Kitts and Nevis Patriots, Melbourne Renegades et al. Don't be surprised when you find the link between all these teams </p>
+                          <div class="card-actions">
+                            <button onclick="addtoPlayer(this)" class="btn btn-primary">Select</button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- calculate -->
+                    <div class="m-2 p-2 card w-100 bg-base-100 shadow-xl border-x  border-purple-600 bg-red-100">
+                      
+                        
+                          <h1 class="mb-10 text-5xl text-center text-fuchsia-900 underline decoration-slate-800 decoration-solid ">Budget</h1>
+                            <p class="font-bold text-1xl">Per Player: <input  type="text" name="" id="playerPrice-Field" class="rounded-xl px-5"></p>
+                            <button id="btn-Calculate-Start" class="rounded-lg p-2  mt-5 btn btn-primary text-white">Calculate</button>
+                            <h1 class="mt-5 font-bold text-1xl">Player Expenses:  $ <span id="player-cost" class="">00</span>  </h1>     
+                            <p class="mt-5 font-bold text-1xl">Manager: <input type="text" name="" id="ManagerPrice-Field" class="rounded-xl px-5"></p>
+                            <p class="mt-5 font-bold text-1xl">  Coach: <input type="text" name="" id="CoachPrice-Field" class="rounded-xl px-5"></p>
+                            <button id="btn-Calculate-End" class="rounded-lg p-2  mt-5 btn btn-primary text-white">Calculate Total</button>
+                            <p class="mt-5 font-bold text-3xl text-start">Total: $ -----------  <span id="Total-Cost" class="text-end">00</span></p>
+
+                          
+                            </div>
+                      </div>
+                  
+                       
+                    
+                    
+               <!-- calculate -->
+              
+             
+        </section>
+    </main>
+
+  
+    <footer class=" mx-10 footer footer-center p-10 bg-base-200 text-base-content rounded">
+        <div class="grid grid-flow-col gap-4">
+          <a class="link link-hover">About us</a> 
+          <a class="link link-hover">Contact</a> 
+          <a class="link link-hover">Jobs</a> 
+          <a class="link link-hover">Press kit</a>
+        </div> 
+        <div>
+          <div class="grid grid-flow-col gap-4">
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
+            <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+          </div>
+        </div> 
+        <div>
+          <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
+        </div>
+      </footer>
+ 
+    <script src="js/addToPlayer.js"></script>
+    <script src="js/calculate.js"></script>
+</body>
+</html>
